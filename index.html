@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Technical writeups on networking, systems, security, and machine learning." />
+    <title>Knowledge // Writeups</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-grid" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top"><span class="brand-symbol">[K]</span><span>KNOWLEDGE<span class="brand-dim">.LAB</span></span></a>
+      <div class="topbar-right"><span class="system-status"><i></i> SYSTEM ONLINE</span><button class="theme-button" id="themeToggle" aria-label="Toggle theme">◐</button></div>
+    </header>
+    <main id="top">
+      <section class="entry-section">
+        <div class="entry-kicker"><span>01</span><b></b><span>PERSONAL TECHNICAL ARCHIVE</span></div>
+        <h1>Welcome to the<br /><span>world of knowledge.</span></h1>
+        <p class="entry-intro">Notes from the edge of systems, networks, security, and machine learning — documenting what I build, what breaks, and what I learn next.</p>
+        <a class="scroll-cue" href="#writeups"><span class="scroll-line"></span>SCROLL TO EXPLORE <strong>↓</strong></a>
+        <div class="entry-orb" aria-hidden="true"><span class="orb-core">✦</span><span class="orb-ring ring-a"></span><span class="orb-ring ring-b"></span><span class="orb-ring ring-c"></span><small>LEARN<br />BUILD<br />SHARE</small></div>
+      </section>
+      <section class="writeups-section" id="writeups">
+        <div class="section-header">
+          <div><div class="section-label">02 // THE ARCHIVE</div><h2>Selected writeups<span class="accent">_</span></h2></div>
+          <label class="search-box" for="searchInput"><span>⌕</span><input id="searchInput" type="search" placeholder="Search archive..." autocomplete="off" /><kbd>/</kbd></label>
+        </div>
+        <div class="filter-row" id="filterRow" role="group" aria-label="Filter writeups"></div>
+        <div class="writeup-grid" id="writeupGrid"></div>
+        <div class="empty-state hidden" id="emptyState"><span>∅</span><p>NO MATCHING NOTES FOUND</p></div>
+      </section>
+    </main>
+    <footer class="footer"><span>KNOWLEDGE.LAB // CONTINUOUS LEARNING</span><span id="year"></span></footer>
+    <dialog class="writeup-modal" id="writeupModal"><button class="modal-close" id="modalClose" aria-label="Close writeup">×</button><div id="modalContent"></div></dialog>
+    <script src="writeups.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
