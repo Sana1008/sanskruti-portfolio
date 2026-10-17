@@ -1,4 +1,0 @@
-.terminal-rule{height:1px;background:#385256;margin:24px 0 12px}
-.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.skill-caption{font:italic .88rem var(--serif);color:var(--pink);margin:12px 0 0}.skill-caption span{color:var(--muted)}
-@media(max-width:760px){.skill-grid{grid-template-columns:1fr}}
